@@ -1,6 +1,7 @@
 # api-first-strategy
 
-## generate springboot project from swagger-petstore.yaml
+## Spring Boot (Server)
+### generate springboot project from swagger-petstore.yaml
 ```
 swagger-codegen generate -v -i "swagger-petstore.yaml" \
  -l "spring" -o "swagger-petstore-springboot" \
@@ -10,9 +11,9 @@ swagger-codegen generate -v -i "swagger-petstore.yaml" \
  --group-id "com.acme.msa"
 ```
 
-## add .gitignore file to swagger-petstore-springboot directory
+### add .gitignore file to swagger-petstore-springboot directory
 
-### .gitignore
+#### .gitignore
 The content of '.gitingore' file came from a project created by STS
 
 ```
@@ -40,4 +41,20 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+```
+
+## Node.JS (Server)
+
+### generate node.js project from swagger-petstore.yaml
+```
+swagger-codegen generate -v -i "swagger-petstore.yaml" \
+ -l "nodejs-server" -o "swagger-petstore-nodejs" 
+```
+
+### add .gitignore file to swagger-petstore-nodejs directory
+
+#### .gitignore
+```
+node_modules
+bower_components
 ```
