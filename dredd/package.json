@@ -1,0 +1,14 @@
+{
+  "name": "dredd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hooks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hooks": "^0.3.2"
+  }
+}
