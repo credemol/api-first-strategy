@@ -24,6 +24,9 @@ public class Pet   {
 
   @JsonProperty("category")
   private Category category = null;
+//  
+//  @JsonProperty("gender")
+//  private String gender = null;
 
   @JsonProperty("name")
   private String name = null;

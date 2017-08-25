@@ -50,7 +50,12 @@ public class PetApiController implements PetApi {
 
     public ResponseEntity<Pet> getPetById(@ApiParam(value = "ID of pet to return",required=true ) @PathVariable("petId") Long petId) {
         // do some magic!
-        return new ResponseEntity<Pet>(HttpStatus.OK);
+    		
+    		Pet pet = new Pet();
+    		pet.setId(petId);
+    		pet.setName("doggy");
+    		
+        return new ResponseEntity<Pet>(pet, HttpStatus.OK);
     }
 
     public ResponseEntity<Void> updatePet(@ApiParam(value = "Pet object that needs to be added to the store" ,required=true )  @Valid @RequestBody Pet body) {
